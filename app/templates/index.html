@@ -1,19 +1,17 @@
-{% extends './base.html' %}
-{% block titulo %}{{data.span}}{% endblock %}
+{% extends 'base.html' %}
+{% block titulo %}Inicio.{{data.span}}{% endblock %}
 {% block body %}
 <div id="banner-wrapper">
     <div id="banner" class="box container">
         <div class="row">
             <div class="col-7 col-12-medium">
                 <h2>Bienvenido.</h2>
-                <p>Gran experiencia gastronómica</p>
+                <p>Haz click en la imagen para más</p>
             </div>
             <div class="col-5 col-12-medium">
-                <ul>
-                    <li><a href="right-sidebar.html" class="button large icon solid fa-arrow-circle-right custom-button">¡Vamos!</a></li>
-                    <li><a href="no-sidebar.html" class="button large icon solid fa-arrow-circle-right custom-button">Contáctanos</a></li>
+                <img src="{{url_for('static', filename='images/pic01.jpeg')}}" alt="" srcset"">
                     
-                </ul>
+                </a>    
             </div>
             
         </div>
